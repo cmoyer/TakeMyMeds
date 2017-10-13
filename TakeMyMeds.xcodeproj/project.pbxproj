@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AC91F911E3E00353B6D /* AppDelegate.swift */; };
+		63883ACC1F911E3E00353B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883ACB1F911E3E00353B6D /* ViewController.swift */; };
+		63883ACF1F911E3E00353B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883ACD1F911E3E00353B6D /* Main.storyboard */; };
+		63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63883AD01F911E3E00353B6D /* TakeMyMeds.xcdatamodeld */; };
+		63883AD41F911E3E00353B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63883AD31F911E3E00353B6D /* Assets.xcassets */; };
+		63883AD71F911E3E00353B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883AD51F911E3E00353B6D /* LaunchScreen.storyboard */; };
+		63883AE21F911E3E00353B6D /* TakeMyMedsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AE11F911E3E00353B6D /* TakeMyMedsTests.swift */; };
+		63883AED1F911E3F00353B6D /* TakeMyMedsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AEC1F911E3F00353B6D /* TakeMyMedsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63883ADE1F911E3E00353B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63883ABE1F911E3E00353B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63883AC51F911E3E00353B6D;
+			remoteInfo = TakeMyMeds;
+		};
+		63883AE91F911E3F00353B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63883ABE1F911E3E00353B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63883AC51F911E3E00353B6D;
+			remoteInfo = TakeMyMeds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63883AC61F911E3E00353B6D /* TakeMyMeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyMeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63883AC91F911E3E00353B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63883ACB1F911E3E00353B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63883ACE1F911E3E00353B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63883AD11F911E3E00353B6D /* TakeMyMeds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeMyMeds.xcdatamodel; sourceTree = "<group>"; };
+		63883AD31F911E3E00353B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63883AD61F911E3E00353B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63883AD81F911E3E00353B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63883ADD1F911E3E00353B6D /* TakeMyMedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeMyMedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63883AE11F911E3E00353B6D /* TakeMyMedsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeMyMedsTests.swift; sourceTree = "<group>"; };
+		63883AE31F911E3F00353B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63883AE81F911E3F00353B6D /* TakeMyMedsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeMyMedsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63883AEC1F911E3F00353B6D /* TakeMyMedsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeMyMedsUITests.swift; sourceTree = "<group>"; };
+		63883AEE1F911E3F00353B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63883AC31F911E3E00353B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63883ADA1F911E3E00353B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63883AE51F911E3F00353B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63883ABD1F911E3E00353B6D = {
+			isa = PBXGroup;
+			children = (
+				63883AC81F911E3E00353B6D /* TakeMyMeds */,
+				63883AE01F911E3E00353B6D /* TakeMyMedsTests */,
+				63883AEB1F911E3F00353B6D /* TakeMyMedsUITests */,
+				63883AC71F911E3E00353B6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63883AC71F911E3E00353B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63883AC61F911E3E00353B6D /* TakeMyMeds.app */,
+				63883ADD1F911E3E00353B6D /* TakeMyMedsTests.xctest */,
+				63883AE81F911E3F00353B6D /* TakeMyMedsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63883AC81F911E3E00353B6D /* TakeMyMeds */ = {
+			isa = PBXGroup;
+			children = (
+				63883AC91F911E3E00353B6D /* AppDelegate.swift */,
+				63883ACB1F911E3E00353B6D /* ViewController.swift */,
+				63883ACD1F911E3E00353B6D /* Main.storyboard */,
+				63883AD31F911E3E00353B6D /* Assets.xcassets */,
+				63883AD51F911E3E00353B6D /* LaunchScreen.storyboard */,
+				63883AD81F911E3E00353B6D /* Info.plist */,
+				63883AD01F911E3E00353B6D /* TakeMyMeds.xcdatamodeld */,
+			);
+			path = TakeMyMeds;
+			sourceTree = "<group>";
+		};
+		63883AE01F911E3E00353B6D /* TakeMyMedsTests */ = {
+			isa = PBXGroup;
+			children = (
+				63883AE11F911E3E00353B6D /* TakeMyMedsTests.swift */,
+				63883AE31F911E3F00353B6D /* Info.plist */,
+			);
+			path = TakeMyMedsTests;
+			sourceTree = "<group>";
+		};
+		63883AEB1F911E3F00353B6D /* TakeMyMedsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63883AEC1F911E3F00353B6D /* TakeMyMedsUITests.swift */,
+				63883AEE1F911E3F00353B6D /* Info.plist */,
+			);
+			path = TakeMyMedsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63883AC51F911E3E00353B6D /* TakeMyMeds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63883AF11F911E3F00353B6D /* Build configuration list for PBXNativeTarget "TakeMyMeds" */;
+			buildPhases = (
+				63883AC21F911E3E00353B6D /* Sources */,
+				63883AC31F911E3E00353B6D /* Frameworks */,
+				63883AC41F911E3E00353B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeMyMeds;
+			productName = TakeMyMeds;
+			productReference = 63883AC61F911E3E00353B6D /* TakeMyMeds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63883ADC1F911E3E00353B6D /* TakeMyMedsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63883AF41F911E3F00353B6D /* Build configuration list for PBXNativeTarget "TakeMyMedsTests" */;
+			buildPhases = (
+				63883AD91F911E3E00353B6D /* Sources */,
+				63883ADA1F911E3E00353B6D /* Frameworks */,
+				63883ADB1F911E3E00353B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63883ADF1F911E3E00353B6D /* PBXTargetDependency */,
+			);
+			name = TakeMyMedsTests;
+			productName = TakeMyMedsTests;
+			productReference = 63883ADD1F911E3E00353B6D /* TakeMyMedsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63883AE71F911E3F00353B6D /* TakeMyMedsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63883AF71F911E3F00353B6D /* Build configuration list for PBXNativeTarget "TakeMyMedsUITests" */;
+			buildPhases = (
+				63883AE41F911E3F00353B6D /* Sources */,
+				63883AE51F911E3F00353B6D /* Frameworks */,
+				63883AE61F911E3F00353B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63883AEA1F911E3F00353B6D /* PBXTargetDependency */,
+			);
+			name = TakeMyMedsUITests;
+			productName = TakeMyMedsUITests;
+			productReference = 63883AE81F911E3F00353B6D /* TakeMyMedsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63883ABE1F911E3E00353B6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Chad Moyer";
+				TargetAttributes = {
+					63883AC51F911E3E00353B6D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					63883ADC1F911E3E00353B6D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63883AC51F911E3E00353B6D;
+					};
+					63883AE71F911E3F00353B6D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 63883AC51F911E3E00353B6D;
+					};
+				};
+			};
+			buildConfigurationList = 63883AC11F911E3E00353B6D /* Build configuration list for PBXProject "TakeMyMeds" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63883ABD1F911E3E00353B6D;
+			productRefGroup = 63883AC71F911E3E00353B6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63883AC51F911E3E00353B6D /* TakeMyMeds */,
+				63883ADC1F911E3E00353B6D /* TakeMyMedsTests */,
+				63883AE71F911E3F00353B6D /* TakeMyMedsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63883AC41F911E3E00353B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63883AD71F911E3E00353B6D /* LaunchScreen.storyboard in Resources */,
+				63883AD41F911E3E00353B6D /* Assets.xcassets in Resources */,
+				63883ACF1F911E3E00353B6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63883ADB1F911E3E00353B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63883AE61F911E3F00353B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63883AC21F911E3E00353B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63883ACC1F911E3E00353B6D /* ViewController.swift in Sources */,
+				63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */,
+				63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63883AD91F911E3E00353B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63883AE21F911E3E00353B6D /* TakeMyMedsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63883AE41F911E3F00353B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63883AED1F911E3F00353B6D /* TakeMyMedsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63883ADF1F911E3E00353B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63883AC51F911E3E00353B6D /* TakeMyMeds */;
+			targetProxy = 63883ADE1F911E3E00353B6D /* PBXContainerItemProxy */;
+		};
+		63883AEA1F911E3F00353B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63883AC51F911E3E00353B6D /* TakeMyMeds */;
+			targetProxy = 63883AE91F911E3F00353B6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63883ACD1F911E3E00353B6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63883ACE1F911E3E00353B6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63883AD51F911E3E00353B6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63883AD61F911E3E00353B6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63883AEF1F911E3F00353B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63883AF01F911E3F00353B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63883AF21F911E3F00353B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WWP93VF96T;
+				INFOPLIST_FILE = TakeMyMeds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMeds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63883AF31F911E3F00353B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WWP93VF96T;
+				INFOPLIST_FILE = TakeMyMeds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMeds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63883AF51F911E3F00353B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WWP93VF96T;
+				INFOPLIST_FILE = TakeMyMedsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMedsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeMyMeds.app/TakeMyMeds";
+			};
+			name = Debug;
+		};
+		63883AF61F911E3F00353B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WWP93VF96T;
+				INFOPLIST_FILE = TakeMyMedsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMedsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeMyMeds.app/TakeMyMeds";
+			};
+			name = Release;
+		};
+		63883AF81F911E3F00353B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WWP93VF96T;
+				INFOPLIST_FILE = TakeMyMedsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMedsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeMyMeds;
+			};
+			name = Debug;
+		};
+		63883AF91F911E3F00353B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WWP93VF96T;
+				INFOPLIST_FILE = TakeMyMedsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMedsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TakeMyMeds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63883AC11F911E3E00353B6D /* Build configuration list for PBXProject "TakeMyMeds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63883AEF1F911E3F00353B6D /* Debug */,
+				63883AF01F911E3F00353B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63883AF11F911E3F00353B6D /* Build configuration list for PBXNativeTarget "TakeMyMeds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63883AF21F911E3F00353B6D /* Debug */,
+				63883AF31F911E3F00353B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63883AF41F911E3F00353B6D /* Build configuration list for PBXNativeTarget "TakeMyMedsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63883AF51F911E3F00353B6D /* Debug */,
+				63883AF61F911E3F00353B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63883AF71F911E3F00353B6D /* Build configuration list for PBXNativeTarget "TakeMyMedsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63883AF81F911E3F00353B6D /* Debug */,
+				63883AF91F911E3F00353B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63883AD01F911E3E00353B6D /* TakeMyMeds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63883AD11F911E3E00353B6D /* TakeMyMeds.xcdatamodel */,
+			);
+			currentVersion = 63883AD11F911E3E00353B6D /* TakeMyMeds.xcdatamodel */;
+			path = TakeMyMeds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63883ABE1F911E3E00353B6D /* Project object */;
+}
