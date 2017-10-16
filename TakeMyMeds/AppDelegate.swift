@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Set our UITabBarColors
+        let activePinkColor = UIColor(red: 255.0/255.0, green: 86.0/255.0, blue: 102.0/255.0, alpha: 1.0)
+        let inactiveGreyColor = UIColor(red: 164.0/255.0, green: 170.0/255.0, blue: 179.0/255.0, alpha: 1.0)
+        
+        // Set up the UINavBar
+        
+        // Set the status bar to white
+        UINavigationBar.appearance().barStyle = .blackOpaque
+        
+        // Setup the UITabBar
+        UITabBar.appearance().barTintColor = UIColor.white
+        UITabBar.appearance().backgroundImage = UIImage.getImageWithColor(color: UIColor.white, size: CGSize(width: 1.0, height: 1.0))
+        UITabBar.appearance().shadowImage = UIImage.getImageWithColor(color: inactiveGreyColor, size: CGSize(width: 1.0, height: 1.0))
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: activePinkColor], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: inactiveGreyColor], for: .normal)
+
+        
         return true
     }
 

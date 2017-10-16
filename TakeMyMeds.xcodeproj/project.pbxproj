@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AC91F911E3E00353B6D /* AppDelegate.swift */; };
-		63883ACC1F911E3E00353B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883ACB1F911E3E00353B6D /* ViewController.swift */; };
 		63883ACF1F911E3E00353B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883ACD1F911E3E00353B6D /* Main.storyboard */; };
 		63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63883AD01F911E3E00353B6D /* TakeMyMeds.xcdatamodeld */; };
 		63883AD41F911E3E00353B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63883AD31F911E3E00353B6D /* Assets.xcassets */; };
 		63883AD71F911E3E00353B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883AD51F911E3E00353B6D /* LaunchScreen.storyboard */; };
 		63883AE21F911E3E00353B6D /* TakeMyMedsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AE11F911E3E00353B6D /* TakeMyMedsTests.swift */; };
 		63883AED1F911E3F00353B6D /* TakeMyMedsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AEC1F911E3F00353B6D /* TakeMyMedsUITests.swift */; };
+		63883AFF1F91218600353B6D /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883AFE1F91218600353B6D /* Today.storyboard */; };
+		63883B011F9121A600353B6D /* MyMeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883B001F9121A600353B6D /* MyMeds.storyboard */; };
+		63883B031F9121DD00353B6D /* MyDoctors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883B021F9121DD00353B6D /* MyDoctors.storyboard */; };
+		63883B051F91220A00353B6D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883B041F91220A00353B6D /* Settings.storyboard */; };
+		63883B081F912B8D00353B6D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883B071F912B8D00353B6D /* UIImageExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* Begin PBXFileReference section */
 		63883AC61F911E3E00353B6D /* TakeMyMeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyMeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63883AC91F911E3E00353B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63883ACB1F911E3E00353B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63883ACE1F911E3E00353B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63883AD11F911E3E00353B6D /* TakeMyMeds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeMyMeds.xcdatamodel; sourceTree = "<group>"; };
 		63883AD31F911E3E00353B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		63883AE81F911E3F00353B6D /* TakeMyMedsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeMyMedsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63883AEC1F911E3F00353B6D /* TakeMyMedsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeMyMedsUITests.swift; sourceTree = "<group>"; };
 		63883AEE1F911E3F00353B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63883AFE1F91218600353B6D /* Today.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
+		63883B001F9121A600353B6D /* MyMeds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyMeds.storyboard; sourceTree = "<group>"; };
+		63883B021F9121DD00353B6D /* MyDoctors.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyDoctors.storyboard; sourceTree = "<group>"; };
+		63883B041F91220A00353B6D /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		63883B071F912B8D00353B6D /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +107,16 @@
 		63883AC81F911E3E00353B6D /* TakeMyMeds */ = {
 			isa = PBXGroup;
 			children = (
+				63883AFA1F911FD500353B6D /* Today */,
+				63883AFB1F91200B00353B6D /* MyMeds */,
+				63883AFC1F91203200353B6D /* MyDoctors */,
+				63883AFD1F91203900353B6D /* Settings */,
+				63883B061F912B4B00353B6D /* SupportingFiles */,
+				63883AD81F911E3E00353B6D /* Info.plist */,
 				63883AC91F911E3E00353B6D /* AppDelegate.swift */,
-				63883ACB1F911E3E00353B6D /* ViewController.swift */,
 				63883ACD1F911E3E00353B6D /* Main.storyboard */,
 				63883AD31F911E3E00353B6D /* Assets.xcassets */,
 				63883AD51F911E3E00353B6D /* LaunchScreen.storyboard */,
-				63883AD81F911E3E00353B6D /* Info.plist */,
 				63883AD01F911E3E00353B6D /* TakeMyMeds.xcdatamodeld */,
 			);
 			path = TakeMyMeds;
@@ -126,6 +138,46 @@
 				63883AEE1F911E3F00353B6D /* Info.plist */,
 			);
 			path = TakeMyMedsUITests;
+			sourceTree = "<group>";
+		};
+		63883AFA1F911FD500353B6D /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				63883AFE1F91218600353B6D /* Today.storyboard */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		63883AFB1F91200B00353B6D /* MyMeds */ = {
+			isa = PBXGroup;
+			children = (
+				63883B001F9121A600353B6D /* MyMeds.storyboard */,
+			);
+			path = MyMeds;
+			sourceTree = "<group>";
+		};
+		63883AFC1F91203200353B6D /* MyDoctors */ = {
+			isa = PBXGroup;
+			children = (
+				63883B021F9121DD00353B6D /* MyDoctors.storyboard */,
+			);
+			path = MyDoctors;
+			sourceTree = "<group>";
+		};
+		63883AFD1F91203900353B6D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				63883B041F91220A00353B6D /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		63883B061F912B4B00353B6D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				63883B071F912B8D00353B6D /* UIImageExt.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +287,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63883AFF1F91218600353B6D /* Today.storyboard in Resources */,
 				63883AD71F911E3E00353B6D /* LaunchScreen.storyboard in Resources */,
+				63883B011F9121A600353B6D /* MyMeds.storyboard in Resources */,
 				63883AD41F911E3E00353B6D /* Assets.xcassets in Resources */,
 				63883ACF1F911E3E00353B6D /* Main.storyboard in Resources */,
+				63883B031F9121DD00353B6D /* MyDoctors.storyboard in Resources */,
+				63883B051F91220A00353B6D /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63883ACC1F911E3E00353B6D /* ViewController.swift in Sources */,
 				63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */,
 				63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */,
+				63883B081F912B8D00353B6D /* UIImageExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMeds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.cmoyer.TakeMyMeds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
