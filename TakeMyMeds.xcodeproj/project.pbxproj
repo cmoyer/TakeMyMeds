@@ -19,6 +19,8 @@
 		63883B031F9121DD00353B6D /* MyDoctors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883B021F9121DD00353B6D /* MyDoctors.storyboard */; };
 		63883B051F91220A00353B6D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883B041F91220A00353B6D /* Settings.storyboard */; };
 		63883B081F912B8D00353B6D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883B071F912B8D00353B6D /* UIImageExt.swift */; };
+		63883B0D1F95182400353B6D /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63883B0C1F9517FB00353B6D /* OpenSans-Light.ttf */; };
+		63883B0E1F95182700353B6D /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63883B0B1F9517FA00353B6D /* OpenSans-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		63883B021F9121DD00353B6D /* MyDoctors.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyDoctors.storyboard; sourceTree = "<group>"; };
 		63883B041F91220A00353B6D /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		63883B071F912B8D00353B6D /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
+		63883B0B1F9517FA00353B6D /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		63883B0C1F9517FB00353B6D /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,9 +179,19 @@
 		63883B061F912B4B00353B6D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				63883B0A1F95178C00353B6D /* Fonts */,
 				63883B071F912B8D00353B6D /* UIImageExt.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		63883B0A1F95178C00353B6D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				63883B0C1F9517FB00353B6D /* OpenSans-Light.ttf */,
+				63883B0B1F9517FA00353B6D /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63883AFF1F91218600353B6D /* Today.storyboard in Resources */,
+				63883B0E1F95182700353B6D /* OpenSans-SemiBold.ttf in Resources */,
 				63883AD71F911E3E00353B6D /* LaunchScreen.storyboard in Resources */,
+				63883B0D1F95182400353B6D /* OpenSans-Light.ttf in Resources */,
 				63883B011F9121A600353B6D /* MyMeds.storyboard in Resources */,
 				63883AD41F911E3E00353B6D /* Assets.xcassets in Resources */,
 				63883ACF1F911E3E00353B6D /* Main.storyboard in Resources */,
