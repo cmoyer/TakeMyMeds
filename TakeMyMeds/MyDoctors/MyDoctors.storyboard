@@ -1,32 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yud-0e-cIF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6F2-45-3hq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--My Doctors-->
-        <scene sceneID="9Mn-P9-V3M">
+        <scene sceneID="lQR-5J-PHy">
             <objects>
-                <viewController id="yud-0e-cIF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kVQ-m1-ZIg">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6F2-45-3hq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Doctors" image="MyDoctorsActiveIcon" selectedImage="MyDoctorsActiveIcon" id="RfZ-79-8cr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YxD-8a-6Q4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wla-oK-WZM" kind="relationship" relationship="rootViewController" id="Opf-nc-PU8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyF-qR-wmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-609" y="360"/>
+        </scene>
+        <!--My Doctors Table View Controller-->
+        <scene sceneID="oVg-zG-a4t">
+            <objects>
+                <tableViewController id="Wla-oK-WZM" customClass="MyDoctorsTableViewController" customModule="TakeMyMeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V4M-oG-HW8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="mg1-Y2-kPh"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Doctors" image="MyDoctorsActiveIcon" selectedImage="MyDoctorsActiveIcon" id="RfZ-79-8cr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kXQ-Pn-TNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorCell" rowHeight="86" id="mfu-ef-6Eu" customClass="MyDoctorsTableViewCell" customModule="TakeMyMeds" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mfu-ef-6Eu" id="Kpq-bn-r6T">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-wM-D5S">
+                                            <rect key="frame" x="8" y="8" width="359" height="69.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Northern Area Family Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hE-Wc-CdX">
+                                                    <rect key="frame" x="8" y="8" width="311" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(412) 630-2670" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-07-aO3">
+                                                    <rect key="frame" x="8" y="29.5" width="311" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5700 Corporate Dr #700, Pittsburgh, PA 15237" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-kC-jqS">
+                                                    <rect key="frame" x="8" y="48" width="311" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-aY-AkX">
+                                                    <rect key="frame" x="331" y="25" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="4sV-8o-PeV"/>
+                                                        <constraint firstAttribute="width" constant="20" id="PWr-Oc-8sB"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Rzs-aY-AkX" firstAttribute="centerY" secondItem="H5c-wM-D5S" secondAttribute="centerY" id="2lj-uz-Prg"/>
+                                                <constraint firstAttribute="trailing" secondItem="fhr-kC-jqS" secondAttribute="trailing" constant="40" id="3yy-jE-RJL"/>
+                                                <constraint firstItem="zl3-07-aO3" firstAttribute="leading" secondItem="H5c-wM-D5S" secondAttribute="leading" constant="8" id="48P-Xw-6rx"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rzs-aY-AkX" secondAttribute="trailing" constant="8" id="4wL-MX-LpT"/>
+                                                <constraint firstItem="8hE-Wc-CdX" firstAttribute="top" secondItem="H5c-wM-D5S" secondAttribute="top" constant="8" id="5FS-ld-61J"/>
+                                                <constraint firstAttribute="trailing" secondItem="8hE-Wc-CdX" secondAttribute="trailing" constant="40" id="6pt-eQ-50y"/>
+                                                <constraint firstItem="zl3-07-aO3" firstAttribute="top" secondItem="8hE-Wc-CdX" secondAttribute="bottom" constant="2" id="DjR-qe-eAe"/>
+                                                <constraint firstAttribute="trailing" secondItem="zl3-07-aO3" secondAttribute="trailing" constant="40" id="Kpm-xI-BJD"/>
+                                                <constraint firstItem="8hE-Wc-CdX" firstAttribute="leading" secondItem="H5c-wM-D5S" secondAttribute="leading" constant="8" id="MCd-gD-Yqf"/>
+                                                <constraint firstAttribute="height" constant="69.5" id="Yl3-7y-zPI"/>
+                                                <constraint firstAttribute="width" constant="359" id="Zz8-xN-rJd"/>
+                                                <constraint firstItem="fhr-kC-jqS" firstAttribute="leading" secondItem="H5c-wM-D5S" secondAttribute="leading" constant="8" id="mfY-OO-MYl"/>
+                                                <constraint firstItem="fhr-kC-jqS" firstAttribute="top" secondItem="zl3-07-aO3" secondAttribute="bottom" constant="2" id="zDC-tw-SEU"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="H5c-wM-D5S" secondAttribute="bottom" constant="8" id="JYc-Wc-jb6"/>
+                                        <constraint firstItem="H5c-wM-D5S" firstAttribute="top" secondItem="Kpq-bn-r6T" secondAttribute="top" constant="8" id="Pmw-U3-zPd"/>
+                                        <constraint firstAttribute="trailing" secondItem="H5c-wM-D5S" secondAttribute="trailing" constant="8" id="Wrz-vf-XI0"/>
+                                        <constraint firstItem="H5c-wM-D5S" firstAttribute="leading" secondItem="Kpq-bn-r6T" secondAttribute="leading" constant="8" id="YiU-fq-959"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="fhr-kC-jqS" id="FP5-JR-ff7"/>
+                                    <outlet property="doctorLabel" destination="8hE-Wc-CdX" id="L1w-nJ-NpK"/>
+                                    <outlet property="phoneLabel" destination="zl3-07-aO3" id="sbe-j3-Vlu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wla-oK-WZM" id="WKd-4u-xpY"/>
+                            <outlet property="delegate" destination="Wla-oK-WZM" id="M1I-sX-nXE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Jbj-Do-AIx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOt-Lm-evy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="361"/>
+            <point key="canvasLocation" x="453.60000000000002" y="358.4707646176912"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CustomRightArrow" width="12" height="21"/>
         <image name="MyDoctorsActiveIcon" width="30" height="31"/>
     </resources>
 </document>
