@@ -35,11 +35,11 @@
             </objects>
             <point key="canvasLocation" x="-609" y="360"/>
         </scene>
-        <!--My Doctors Table View Controller-->
+        <!--My Doctors-->
         <scene sceneID="oVg-zG-a4t">
             <objects>
-                <tableViewController id="Wla-oK-WZM" customClass="MyDoctorsTableViewController" customModule="TakeMyMeds" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V4M-oG-HW8">
+                <tableViewController title="My Doctors" id="Wla-oK-WZM" customClass="MyDoctorsTableViewController" customModule="TakeMyMeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V4M-oG-HW8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,26 +48,26 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mfu-ef-6Eu" id="Kpq-bn-r6T">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-wM-D5S">
                                             <rect key="frame" x="8" y="8" width="359" height="69.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Northern Area Family Medicine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hE-Wc-CdX">
-                                                    <rect key="frame" x="8" y="8" width="311" height="19.5"/>
+                                                    <rect key="frame" x="8" y="8" width="311" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(412) 630-2670" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-07-aO3">
-                                                    <rect key="frame" x="8" y="29.5" width="311" height="16.5"/>
+                                                    <rect key="frame" x="8" y="26.5" width="311" height="14"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5700 Corporate Dr #700, Pittsburgh, PA 15237" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-kC-jqS">
-                                                    <rect key="frame" x="8" y="48" width="311" height="16.5"/>
+                                                    <rect key="frame" x="8" y="42.5" width="311" height="14"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -107,6 +107,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="fhr-kC-jqS" id="FP5-JR-ff7"/>
+                                    <outlet property="backgroundCardView" destination="H5c-wM-D5S" id="E3Q-9G-fEo"/>
                                     <outlet property="doctorLabel" destination="8hE-Wc-CdX" id="L1w-nJ-NpK"/>
                                     <outlet property="phoneLabel" destination="zl3-07-aO3" id="sbe-j3-Vlu"/>
                                 </connections>
@@ -117,7 +118,7 @@
                             <outlet property="delegate" destination="Wla-oK-WZM" id="M1I-sX-nXE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Jbj-Do-AIx"/>
+                    <navigationItem key="navigationItem" title="My Doctors" id="Jbj-Do-AIx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOt-Lm-evy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
