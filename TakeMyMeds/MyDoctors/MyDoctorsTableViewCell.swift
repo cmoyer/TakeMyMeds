@@ -33,6 +33,8 @@ class MyDoctorsTableViewCell: UITableViewCell {
         backgroundCardView.layer.shadowOffset = CGSize(width: 0, height: 3.0)
         backgroundCardView.layer.shadowOpacity = 0.8
         
+        self.backgroundColor = UIColor.clear
+        
     }
     
 

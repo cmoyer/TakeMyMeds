@@ -24,6 +24,9 @@
 		63883B081F912B8D00353B6D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883B071F912B8D00353B6D /* UIImageExt.swift */; };
 		63883B0D1F95182400353B6D /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63883B0C1F9517FB00353B6D /* OpenSans-Light.ttf */; };
 		63883B0E1F95182700353B6D /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63883B0B1F9517FA00353B6D /* OpenSans-SemiBold.ttf */; };
+		639ADD581FB0D3EC0052291E /* MyMedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADD571FB0D3EC0052291E /* MyMedsTableViewCell.swift */; };
+		639ADD5A1FB0D4030052291E /* MyMedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADD591FB0D4030052291E /* MyMedsTableViewController.swift */; };
+		639ADD5C1FB0D4D60052291E /* MedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639ADD5B1FB0D4D60052291E /* MedModel.swift */; };
 		63A695AF1F9E740E00D50265 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A695AE1F9E740E00D50265 /* DoctorModel.swift */; };
 		63A695B11F9E767300D50265 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A695B01F9E767300D50265 /* TestData.swift */; };
 		63E0B8401F9E5C10009DA050 /* MyDoctorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0B83F1F9E5C10009DA050 /* MyDoctorsTableViewController.swift */; };
@@ -71,6 +74,9 @@
 		63883B071F912B8D00353B6D /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		63883B0B1F9517FA00353B6D /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		63883B0C1F9517FB00353B6D /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		639ADD571FB0D3EC0052291E /* MyMedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedsTableViewCell.swift; sourceTree = "<group>"; };
+		639ADD591FB0D4030052291E /* MyMedsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedsTableViewController.swift; sourceTree = "<group>"; };
+		639ADD5B1FB0D4D60052291E /* MedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedModel.swift; sourceTree = "<group>"; };
 		63A695AE1F9E740E00D50265 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
 		63A695B01F9E767300D50265 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		63E0B83F1F9E5C10009DA050 /* MyDoctorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDoctorsTableViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				63883B001F9121A600353B6D /* MyMeds.storyboard */,
+				639ADD571FB0D3EC0052291E /* MyMedsTableViewCell.swift */,
+				639ADD591FB0D4030052291E /* MyMedsTableViewController.swift */,
+				639ADD5B1FB0D4D60052291E /* MedModel.swift */,
 			);
 			path = MyMeds;
 			sourceTree = "<group>";
@@ -355,12 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639ADD5A1FB0D4030052291E /* MyMedsTableViewController.swift in Sources */,
 				63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */,
 				63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */,
 				6329B6C21F97BAA5004E8BD3 /* SettingsTableViewCell.swift in Sources */,
 				63A695B11F9E767300D50265 /* TestData.swift in Sources */,
 				6329B6BE1F962AF0004E8BD3 /* SettingsViewController.swift in Sources */,
 				6329B6C01F9665B8004E8BD3 /* SettingsConfig.swift in Sources */,
+				639ADD581FB0D3EC0052291E /* MyMedsTableViewCell.swift in Sources */,
+				639ADD5C1FB0D4D60052291E /* MedModel.swift in Sources */,
 				63883B081F912B8D00353B6D /* UIImageExt.swift in Sources */,
 				63E0B8421F9E7085009DA050 /* MyDoctorsTableViewCell.swift in Sources */,
 				63E0B8401F9E5C10009DA050 /* MyDoctorsTableViewController.swift in Sources */,

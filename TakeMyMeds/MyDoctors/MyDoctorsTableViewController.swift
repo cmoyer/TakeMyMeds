@@ -51,11 +51,6 @@ class MyDoctorsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
-    
-    // Change the background color of the cell to clear so it displays the background image of the table view that we set in our viewDidLoad() 
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor.clear
-    }
 
     /*
     // MARK: - Navigation
