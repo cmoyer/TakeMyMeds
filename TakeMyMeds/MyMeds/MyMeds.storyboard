@@ -1,32 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GuV-yB-uow">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GN9-w2-Dx9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--My Meds-->
-        <scene sceneID="c1B-cS-QY0">
+        <scene sceneID="UBR-Nq-9e4">
             <objects>
-                <viewController id="GuV-yB-uow" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Oru-Q8-EoG">
+                <tableViewController id="iPV-2f-3Yt" customClass="MyMedsTableViewController" customModule="TakeMyMeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xlv-Gb-ym8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="6tL-aS-A5j"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Meds" image="MyMedsIcon" selectedImage="MyMedsActiveIcon" id="hsg-UU-JZ9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S6p-kW-nUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedCell" rowHeight="86" id="0JU-Xa-RXT" customClass="MyMedsTableViewCell" customModule="TakeMyMeds" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0JU-Xa-RXT" id="Y7A-M0-gat">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fio-dh-kdM" userLabel="Background Card View">
+                                            <rect key="frame" x="8" y="8" width="359" height="69.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methamphetamine Hydrochloride" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-xN-ua2">
+                                                    <rect key="frame" x="8" y="8" width="311" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiI-Xt-vKq">
+                                                    <rect key="frame" x="8" y="26.5" width="311" height="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-rJ-96O">
+                                                    <rect key="frame" x="8" y="42.5" width="311" height="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-Kx-E8E">
+                                                    <rect key="frame" x="331" y="25" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="WLm-R8-yaS"/>
+                                                        <constraint firstAttribute="height" constant="20" id="t8N-BK-M1V"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="CiI-Xt-vKq" secondAttribute="trailing" constant="40" id="6DI-Fu-QQL"/>
+                                                <constraint firstItem="Mx6-xN-ua2" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="6Y9-fv-pO8"/>
+                                                <constraint firstAttribute="trailing" secondItem="ewy-rJ-96O" secondAttribute="trailing" constant="40" id="7ha-xD-07u"/>
+                                                <constraint firstItem="CiI-Xt-vKq" firstAttribute="top" secondItem="Mx6-xN-ua2" secondAttribute="bottom" constant="2" id="7jE-FC-s9g"/>
+                                                <constraint firstItem="XGE-Kx-E8E" firstAttribute="centerY" secondItem="fio-dh-kdM" secondAttribute="centerY" id="ADv-OO-3XJ"/>
+                                                <constraint firstItem="ewy-rJ-96O" firstAttribute="top" secondItem="CiI-Xt-vKq" secondAttribute="bottom" constant="2" id="C8k-r8-QJC"/>
+                                                <constraint firstAttribute="width" constant="359" id="Dfr-nA-GGj"/>
+                                                <constraint firstAttribute="trailing" secondItem="XGE-Kx-E8E" secondAttribute="trailing" constant="8" id="S2q-X9-fX4"/>
+                                                <constraint firstAttribute="height" constant="69.5" id="Z6O-fm-i4d"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mx6-xN-ua2" secondAttribute="trailing" constant="40" id="bGM-td-YPX"/>
+                                                <constraint firstItem="ewy-rJ-96O" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="hRO-AO-TNY"/>
+                                                <constraint firstItem="Mx6-xN-ua2" firstAttribute="top" secondItem="fio-dh-kdM" secondAttribute="top" constant="8" id="hll-dE-4Se"/>
+                                                <constraint firstItem="CiI-Xt-vKq" firstAttribute="top" secondItem="Mx6-xN-ua2" secondAttribute="bottom" constant="2" id="vp2-Uv-Io3"/>
+                                                <constraint firstItem="CiI-Xt-vKq" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="xpg-of-e3H"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fio-dh-kdM" firstAttribute="top" secondItem="Y7A-M0-gat" secondAttribute="top" constant="8" id="KIJ-81-KvS"/>
+                                        <constraint firstAttribute="trailing" secondItem="fio-dh-kdM" secondAttribute="trailing" constant="8" id="Vkn-mF-4bR"/>
+                                        <constraint firstItem="fio-dh-kdM" firstAttribute="leading" secondItem="Y7A-M0-gat" secondAttribute="leading" constant="8" id="b4P-Bf-u7n"/>
+                                        <constraint firstAttribute="bottom" secondItem="fio-dh-kdM" secondAttribute="bottom" constant="8" id="gfh-3J-MJz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="backgroundCardView" destination="fio-dh-kdM" id="Npj-0v-OJK"/>
+                                    <outlet property="nameLabel" destination="Mx6-xN-ua2" id="Zlo-so-8v2"/>
+                                    <outlet property="remindersLabel" destination="ewy-rJ-96O" id="RJe-qN-Kpb"/>
+                                    <outlet property="strengthLabel" destination="CiI-Xt-vKq" id="NAO-UK-QVw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iPV-2f-3Yt" id="g2J-vF-3ft"/>
+                            <outlet property="delegate" destination="iPV-2f-3Yt" id="voU-vS-aU0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Meds" id="U5z-3m-syR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OkY-eJ-Obh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="-370"/>
+            <point key="canvasLocation" x="-335.19999999999999" y="-439.43028485757122"/>
+        </scene>
+        <!--My Meds-->
+        <scene sceneID="go4-3i-dga">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GN9-w2-Dx9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Meds" image="MyMedsIcon" selectedImage="MyMedsActiveIcon" id="iH7-6H-FzL"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PfG-ji-vmW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iPV-2f-3Yt" kind="relationship" relationship="rootViewController" id="X0v-xL-N5g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTT-PZ-SQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1385" y="-439"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CustomRightArrow" width="12" height="21"/>
         <image name="MyMedsActiveIcon" width="34" height="26"/>
         <image name="MyMedsIcon" width="34" height="26"/>
     </resources>
