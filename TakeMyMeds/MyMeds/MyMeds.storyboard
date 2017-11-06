@@ -36,19 +36,19 @@
                                             <rect key="frame" x="8" y="8" width="359" height="69.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Methamphetamine Hydrochloride" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-xN-ua2">
-                                                    <rect key="frame" x="8" y="8" width="311" height="16.5"/>
+                                                    <rect key="frame" x="60" y="8" width="259" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiI-Xt-vKq">
-                                                    <rect key="frame" x="8" y="26.5" width="311" height="14"/>
+                                                    <rect key="frame" x="60" y="29.5" width="259" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-rJ-96O">
-                                                    <rect key="frame" x="8" y="42.5" width="311" height="14"/>
+                                                    <rect key="frame" x="60" y="48" width="259" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -60,23 +60,32 @@
                                                         <constraint firstAttribute="height" constant="20" id="t8N-BK-M1V"/>
                                                     </constraints>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddEditPhone" translatesAutoresizingMaskIntoConstraints="NO" id="CyW-fu-Io9">
+                                                    <rect key="frame" x="8" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Bs1-hF-abL"/>
+                                                        <constraint firstAttribute="height" constant="50" id="LL9-Ys-cML"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstItem="CyW-fu-Io9" firstAttribute="centerY" secondItem="fio-dh-kdM" secondAttribute="centerY" id="2gS-AZ-eEe"/>
                                                 <constraint firstAttribute="trailing" secondItem="CiI-Xt-vKq" secondAttribute="trailing" constant="40" id="6DI-Fu-QQL"/>
-                                                <constraint firstItem="Mx6-xN-ua2" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="6Y9-fv-pO8"/>
+                                                <constraint firstItem="Mx6-xN-ua2" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="60" id="6Y9-fv-pO8"/>
                                                 <constraint firstAttribute="trailing" secondItem="ewy-rJ-96O" secondAttribute="trailing" constant="40" id="7ha-xD-07u"/>
                                                 <constraint firstItem="CiI-Xt-vKq" firstAttribute="top" secondItem="Mx6-xN-ua2" secondAttribute="bottom" constant="2" id="7jE-FC-s9g"/>
                                                 <constraint firstItem="XGE-Kx-E8E" firstAttribute="centerY" secondItem="fio-dh-kdM" secondAttribute="centerY" id="ADv-OO-3XJ"/>
                                                 <constraint firstItem="ewy-rJ-96O" firstAttribute="top" secondItem="CiI-Xt-vKq" secondAttribute="bottom" constant="2" id="C8k-r8-QJC"/>
                                                 <constraint firstAttribute="width" constant="359" id="Dfr-nA-GGj"/>
                                                 <constraint firstAttribute="trailing" secondItem="XGE-Kx-E8E" secondAttribute="trailing" constant="8" id="S2q-X9-fX4"/>
+                                                <constraint firstItem="CyW-fu-Io9" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="TTx-KS-djC"/>
                                                 <constraint firstAttribute="height" constant="69.5" id="Z6O-fm-i4d"/>
                                                 <constraint firstAttribute="trailing" secondItem="Mx6-xN-ua2" secondAttribute="trailing" constant="40" id="bGM-td-YPX"/>
-                                                <constraint firstItem="ewy-rJ-96O" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="hRO-AO-TNY"/>
+                                                <constraint firstItem="ewy-rJ-96O" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="60" id="hRO-AO-TNY"/>
                                                 <constraint firstItem="Mx6-xN-ua2" firstAttribute="top" secondItem="fio-dh-kdM" secondAttribute="top" constant="8" id="hll-dE-4Se"/>
                                                 <constraint firstItem="CiI-Xt-vKq" firstAttribute="top" secondItem="Mx6-xN-ua2" secondAttribute="bottom" constant="2" id="vp2-Uv-Io3"/>
-                                                <constraint firstItem="CiI-Xt-vKq" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="8" id="xpg-of-e3H"/>
+                                                <constraint firstItem="CiI-Xt-vKq" firstAttribute="leading" secondItem="fio-dh-kdM" secondAttribute="leading" constant="60" id="xpg-of-e3H"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -128,6 +137,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AddEditPhone" width="14" height="15"/>
         <image name="CustomRightArrow" width="12" height="21"/>
         <image name="MyMedsActiveIcon" width="34" height="26"/>
         <image name="MyMedsIcon" width="34" height="26"/>
