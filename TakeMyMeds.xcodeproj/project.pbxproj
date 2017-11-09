@@ -10,6 +10,7 @@
 		6329B6BE1F962AF0004E8BD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329B6BD1F962AF0004E8BD3 /* SettingsViewController.swift */; };
 		6329B6C01F9665B8004E8BD3 /* SettingsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329B6BF1F9665B8004E8BD3 /* SettingsConfig.swift */; };
 		6329B6C21F97BAA5004E8BD3 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6329B6C11F97BAA5004E8BD3 /* SettingsTableViewCell.swift */; };
+		635DF5951FB4EC91000E122E /* MyDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635DF5941FB4EC91000E122E /* MyDoctorsViewController.swift */; };
 		63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63883AC91F911E3E00353B6D /* AppDelegate.swift */; };
 		63883ACF1F911E3E00353B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63883ACD1F911E3E00353B6D /* Main.storyboard */; };
 		63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63883AD01F911E3E00353B6D /* TakeMyMeds.xcdatamodeld */; };
@@ -54,6 +55,7 @@
 		6329B6BD1F962AF0004E8BD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6329B6BF1F9665B8004E8BD3 /* SettingsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfig.swift; sourceTree = "<group>"; };
 		6329B6C11F97BAA5004E8BD3 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		635DF5941FB4EC91000E122E /* MyDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDoctorsViewController.swift; sourceTree = "<group>"; };
 		63883AC61F911E3E00353B6D /* TakeMyMeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyMeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63883AC91F911E3E00353B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63883ACE1F911E3E00353B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				63E0B83F1F9E5C10009DA050 /* MyDoctorsTableViewController.swift */,
 				63E0B8411F9E7085009DA050 /* MyDoctorsTableViewCell.swift */,
 				63A695AE1F9E740E00D50265 /* DoctorModel.swift */,
+				635DF5941FB4EC91000E122E /* MyDoctorsViewController.swift */,
 			);
 			path = MyDoctors;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639ADD5A1FB0D4030052291E /* MyMedsTableViewController.swift in Sources */,
+				635DF5951FB4EC91000E122E /* MyDoctorsViewController.swift in Sources */,
 				63883ACA1F911E3E00353B6D /* AppDelegate.swift in Sources */,
 				63883AD21F911E3E00353B6D /* TakeMyMeds.xcdatamodeld in Sources */,
 				6329B6C21F97BAA5004E8BD3 /* SettingsTableViewCell.swift in Sources */,

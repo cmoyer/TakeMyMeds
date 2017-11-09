@@ -10,6 +10,7 @@ import UIKit
 
 class MyDoctorsTableViewController: UITableViewController {
 
+    var doctorButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = 86
@@ -29,9 +30,37 @@ class MyDoctorsTableViewController: UITableViewController {
         
         // remove the extra blank cells at the bottom of our table
         self.tableView.tableFooterView = UIView()
+        
+        // Setup our floating doctor button
+        self.doctorButton = UIButton(type: .custom)
+        self.doctorButton.addTarget(self, action: #selector(ButtonClick(_:)), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(doctorButton)
 
     }
 
+    
+    override func viewWillLayoutSubviews() {
+        // Set the styles and constraints for our floating add new doctor button
+        doctorButton.layer.cornerRadius = 3.0
+        doctorButton.clipsToBounds = true
+        doctorButton.setImage(UIImage(named:"AddDocBtn"), for: .normal)
+        doctorButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Set the auto layout constraints for our button
+        // Get the superview's layout
+        let margins = super.tableView.backgroundView?.layoutMarginsGuide
+        
+//        doctorButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 450).isActive = true
+        doctorButton.bottomAnchor.constraint(equalTo: margins!.bottomAnchor)
+        doctorButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        doctorButton.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        doctorButton.widthAnchor.constraint(equalToConstant: 355).isActive = true
+        
+    }
+    
+    @IBAction func ButtonClick(_ sender: UIButton) {
+        // Segue to the new doctor screen
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
